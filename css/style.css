@@ -1,56 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,700&display=swap');
+@font-face {
+    font-family: 'Match';
+    src: url('/fonts/MatchBold.woff2') format('woff2'),
+        url('/fonts/MatchBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 18px;
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
 }
-li, p, h2, h2, h3, h4{
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    margin: 20px 60px;
-}
- li, p, h1, h2, h3, h4::first-line{
- margin: 5px 100px;  
-}
-a{
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-style: italic;
-    font-weight: 600;
-    color: rgb(170, 118, 40);
-}
-img{
-    height: 286px;
-    padding: 5px 20px;
-}
-h1{
-    text-align: left;
-    font-size: 90px;
-    font-family: "Libre Baskerville";
-    line-height: 71px;
-    padding: 10px 0px 0px 0px;
-}
-#sec{
-    color: rgb(206, 151, 69);
-    padding: 0px;
-}
-.name, h3{
+.wrapper{
+    min-height: 100%;
+    overflow:hidden;
     font-size: 20px;
+    margin: 30px;
 }
-.comment{
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
+header{
+    font-family: 'Match';
+    display: inline-block;
 }
-.link{
-    text-align: center;
-    height: 50px;
+body{
+   font-family: 'Lato'; 
 }
-p.link{
-    padding-top: 55px;
-    color:rgb(65, 43, 10);
+.block{
+    display: inline-block;
+    background-color: rgba(83, 58, 20, 0.521);
+    margin: 20px;
+    padding: 20px 10px;
+    width: 300px;
+    border-top: 7px dotted black;
+    border-bottom: 7px dotted black;
+    border-left: 7px dashed white;
+    border-right: 7px dashed white;
+}
+.block_2{
+    display: inline-block;
+    background-color: rgba(83, 58, 20, 0.521);
+    margin: 20px;
+    padding: 20px 10px;
+    width: 300px;
+    border-radius: 10px 80px 40px 60px;
+}
+.block_3{
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: rgba(153, 153, 153, 0.301);
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.616);
+    text-decoration: none;
+    color: black;
+}
+#first{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: teal;
+}
+#second{
+   color: rgba(0, 0, 0, 0.5); 
+}
+#third{
+    border: 5px solid black;
+}
+#fourth{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(248, 248, 248);
+    border-top: 12px dotted rgb(173, 156, 81);
+    border-bottom: 12px ridge rgb(61, 95, 146) ;
+    border-left: 12px dashed rgb(146, 60, 113);
+    border-right: 12px double rgb(94, 139, 64);
+}
+#five{
+    text-decoration: none;
+    text-shadow: black 2px 3px 3px;
 }
